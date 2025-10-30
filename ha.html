@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade teller</title>
+</head>
+<body>
+    <script>
+        let sname = prompt("what is your name?");
+        let sage = prompt("what is you age?");
+        let smark= prompt("what is you marks?(out of 500)");
+
+        let sgrade= ""
+
+        if (smark>=470){
+            sgrade="A"
+        }
+        else if (smark>=400){
+            sgrade="B"
+        }
+        else if(smark>=300){
+            sgrade="C"
+        }
+        else if(smark>=230){
+            sgrade="D"
+        }
+        else{
+            sgrade="F"
+        }
+
+
+        if(sgrade=="F"){
+            alert(`Name: ${sname}, Age: ${sage}, Marks: ${smark}, Grade: ${sgrade}, you are fail`);
+        }
+        else{
+            alert(`Name: ${sname}, Age: ${sage}, Marks: ${smark}, Grade: ${sgrade}, you are pass`);
+        }
+
+    </script>
+</body>
+</html>
